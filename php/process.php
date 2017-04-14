@@ -61,7 +61,7 @@
 
 
     //send email
-    $to = 'sutho100@gmail.com';
+    $to = "$email, sutho100@gmail.com";
 
     $subject = 'Website Change Request';
 
@@ -70,7 +70,7 @@
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
     $msg .= '
-        <p>Hi Mark,<br/><br/>See below for a new entry to the contact form</p>
+        <p>Hi ' . $name . ',<br/><br/>See below for a new entry to the contact form</p>
 
         <table cellspacing="0" cellpadding="0" style="width:100%; border: 1px solid #333; border-collapse: separate; border-spacing: 0;">
           <tr style="border: 1px solid #333">

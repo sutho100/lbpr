@@ -1,0 +1,16 @@
+Task: 
+	Create a responsive contact page from the Photoshop file in this folder.
+
+Front-End:
+	- All fields are required and must be validated.
+	- Submit form via Ajax and show error/success below form.
+	- Google map is to be styled using Snazzy Maps. https://snazzymaps.com/
+
+Back-end:
+	- All fields are required and must be validated.
+	- Send an email to support@wisdom.com.au with form results.
+	- Store form results in a database.
+	- Use MySQL (ensure it is not subject to SQL injection)
+
+
+Once complete package your files up and email them back to us.

@@ -1,0 +1,361 @@
+
+
+/* ==========================================================================
+   Todd Sutherland's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$lightGrey: #b4b4b4;
+$darkGrey: #979797;
+$black: #000;
+$white: #fff;
+$blue: #1070ad;
+$green: #adb929;
+$red: #ad1010;
+
+
+body {
+    font-family: 'montserratregular';
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2, h3 {
+    font-family: 'montserratbold';
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+.result-name, 
+.result-phone, 
+.result-message, 
+.result-email {
+    text-align: left;
+    padding-bottom: 10px;
+    display: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+   -webkit-box-shadow: 1px 0 1px 1px $blue;
+    box-shadow: 1px 0 1px 1px $blue;
+}
+
+
+input {
+
+    &[type=text] {
+        height: 31px;
+        border: 1px solid $darkGrey;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-top: 6px;
+        width: 100%;
+    }
+
+    &[type=submit],
+    &[type=reset] {
+        border: 0;
+        height: 38px;
+        color: $white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &[type=submit] {
+        background: $green;
+    }
+
+    &[type=reset] {
+        background: $lightGrey;
+    }
+}
+
+.name-wrapper,
+.phone-wrapper {
+    width: 50%;
+    float: left;
+}
+
+.name-wrapper {
+    padding-right: 3px;
+}
+
+.phone-wrapper {
+    padding-left: 3px;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $darkGrey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $darkGrey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $darkGrey;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $darkGrey;
+}
+
+.map {
+    width: 750px;
+    height: 500px;
+}
+
+.form-wrapper {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+
+    form {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        color: $darkGrey;
+
+        a {
+            color: $green;
+        }
+    }
+}
+
+.successful {
+    display: none;
+
+    p {
+        text-align: center;
+        font-family: 'montserratregular';
+        font-size: 1.2em;
+        color: $green;
+    }
+}
+
+.contact-form {
+    padding-top: 40px;
+}
+
+.map-wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;   
+    padding-top: 30px; 
+
+    .col-md-12 {
+        padding-left: 0;
+        padding-right: 0;
+
+        .map {
+            width: 100%;
+            height: 381px;
+        }
+    }
+}
+
+ul.main-menu {
+    list-style: none;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        list-style: none;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        a {
+            color: $black;
+
+            text-decoration: none;
+
+            &:hover,
+            &:active {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.companyPhone {
+    text-align: center;
+    padding-bottom: 10px;
+
+    li {
+        display: inline-block;
+        padding-left: 3px;
+        padding-right: 3px;
+
+        p {
+            color: $green;
+            font-size: 1.9em;
+            font-family: 'montserratbold';            
+        }        
+
+        img {
+            padding-bottom: 14px;
+        }
+    }
+}
+
+.headline {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 60px;
+
+    h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    p {
+        color: $darkGrey;
+        line-height: 2em;
+    }
+}
+
+.banner {
+    height: 679px;
+    max-width: 1700px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.associations {
+    padding-top: 40px;
+
+    p {
+        text-align: center;
+        color: $darkGrey;
+    }
+
+    ul {
+        text-align: center;
+        padding-top: 20px;
+
+        li {
+            display: inline-block;
+            padding-left: 35px;
+            padding-right: 35px;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.subscribe {
+    padding-bottom: 60px;
+
+    h3 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .subscribeform-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: relative;
+
+        input {
+            height: 31px;
+
+            &[type=submit] {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+footer {
+    background: #000;
+    height: 86px;
+
+    ul {
+        text-align: center;
+        padding-top: 34px;
+
+        li {
+            display: inline-block;
+            padding-left: 5px;
+            padding-right: 5px;
+
+            p {
+                color: $white;     
+            }
+
+            img {
+                padding-bottom: 6px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
